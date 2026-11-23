@@ -1,0 +1,956 @@
+<!doctype html><html lang="pl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>50 ofert, które rozwijają — Poznań</title>
+<meta name="description" content="Wybór ofert pracy w Poznaniu pod kątem rozwoju zawodowego, nie pensji.">
+<style>
+*{box-sizing:border-box}
+:root{--bg:#12100f;--card:#1c1815;--line:#2e2722;--fg:#efe8df;--dim:#a79c92;--mint:#7bd8b4;--coral:#ff8f73;--amber:#f5c26b}
+body{margin:0;background:var(--bg);color:var(--fg);font:15.5px/1.55 ui-sans-serif,system-ui,"Segoe UI",Roboto,sans-serif;
+  -webkit-font-smoothing:antialiased}
+::-webkit-scrollbar{width:0}
+.wrap{max-width:880px;margin:0 auto;padding:34px 18px 90px}
+header h1{font-size:29px;line-height:1.15;margin:0 0 8px;letter-spacing:-.6px}
+header p{color:var(--dim);font-size:14.5px;margin:0;max-width:60ch}
+.stats{display:flex;gap:18px;flex-wrap:wrap;margin:22px 0 8px;font-size:13px;color:var(--dim)}
+.stats b{color:var(--fg);font-weight:600}
+.method{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px;margin:22px 0 30px;
+  font-size:13.5px;color:var(--dim)}
+.method b{color:var(--fg)}
+.controls{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 26px}
+.chip{border:1px solid var(--line);background:var(--card);color:var(--dim);border-radius:999px;padding:8px 14px;
+  font-size:13px;cursor:pointer;font-family:inherit;transition:.15s;text-decoration:none}
+.chip:hover{color:var(--fg)}
+.chip.on{background:#16241f;border-color:#2f5c4c;color:var(--mint)}
+.sec-head{margin:34px 0 14px}
+.sec-head h2{font-size:17px;margin:0 0 4px;letter-spacing:-.2px}
+.sec-head p{color:var(--dim);font-size:13.5px;margin:0;max-width:62ch}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:15px 17px;margin-bottom:10px;transition:.15s}
+.card:hover{border-color:#3d322b}
+.head{display:flex;gap:13px;align-items:flex-start}
+.rank{flex:0 0 26px;color:#6f655c;font-size:13px;font-variant-numeric:tabular-nums;padding-top:3px}
+.main{flex:1;min-width:0}
+h3{font-size:15.5px;margin:0 0 3px;font-weight:620;letter-spacing:-.15px}
+h3 a{color:inherit;text-decoration:none}
+h3 a:hover{color:var(--mint)}
+.co{color:var(--dim);font-size:13px}
+.meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:7px;font-size:12.5px;align-items:center}
+.pay{color:var(--mint);font-variant-numeric:tabular-nums}
+.dl{color:var(--amber)}
+.badge{border:1px solid #2f5c4c;background:#16241f;color:var(--mint);border-radius:999px;padding:2px 9px;font-size:11.5px}
+.g{flex:0 0 38px;height:38px;border-radius:12px;background:#201b17;border:1px solid var(--line);
+  display:flex;align-items:center;justify-content:center;font-size:13px;color:var(--mint);font-weight:650}
+.why{list-style:none;margin:11px 0 0;padding:10px 0 0;border-top:1px dashed var(--line);display:grid;gap:3px}
+.why li{color:#c4b8ab;font-size:12.8px;padding-left:14px;position:relative}
+.why li:before{content:"→";position:absolute;left:0;color:#5c5148}
+footer{margin-top:46px;padding-top:18px;border-top:1px solid var(--line);color:#6f655c;font-size:12.5px;line-height:1.75}
+footer b{color:var(--dim)}
+.empty{color:var(--dim);text-align:center;padding:40px 0}
+@media(max-width:560px){header h1{font-size:24px}.wrap{padding:24px 13px 70px}}
+</style></head><body><div class="wrap">
+<header>
+  <h1>52 oferty, które rozwijają</h1>
+  <p>Poznań, 23.11.2026. Wybrane z 6,161 ogłoszeń z sześciu portali — nie po pensji, a po tym,
+  czego się w nich nauczysz i co zostanie na CV. Pieniądze są w opisie, ale nie decydują o kolejności.</p>
+  <div class="stats">
+    <span><b>52</b> ofert</span>
+    <span><b>15</b> bez doświadczenia</span>
+    <span><b>15</b> staży i praktyk</span>
+    <span>dane z <b>2026-11-23</b></span>
+  </div>
+</header>
+
+<div class="method">
+  <b>Jak to jest posegregowane.</b> Każda oferta dostała ocenę rozwoju (liczba po prawej): czy jesteś
+  na stanowisku, gdzie ktoś cię wdraża, czy firma jest rozpoznawalna, czy pojawia się konkretne narzędzie
+  (PLC, Python, Excel, SEP), czy praca jest po angielsku i czy prowadzi dalej w Twoim kierunku.
+  Pensja wchodzi do oceny, ale najwyżej na kilkanaście punktów — oferta za 6 tys. z realnym wdrożeniem
+  bije ofertę za 9 tys. bez mentoringu.
+</div>
+
+<div class="controls">
+  <input id="q" placeholder="szukaj: automatyka, python, staż…" style="background:var(--card);border:1px solid var(--line);
+    border-radius:999px;padding:8px 15px;color:var(--fg);font-family:inherit;font-size:13px;outline:none;min-width:220px">
+  <button class="chip" data-f="ne">bez doświadczenia</button>
+  <button class="chip" data-f="start">tylko staże</button>
+  <button class="chip" data-f="tech">tylko techniczne</button>
+</div>
+
+
+<section id="start">
+  <div class="sec-head">
+    <h2>Start — staże i praktyki</h2>
+    <p>Najwięcej nauki na godzinę. Tu płacą mniej, ale po pół roku umiesz coś, czego nie umie nikt po studiach.</p>
+  </div>
+  
+<article class="card" data-ne="1" data-t="staż w dziale utrzymania ruchu (automatyka i robotyka) imperial tobacco polska s.a.">
+  <div class="head">
+    <span class="rank">1</span>
+    <div class="main">
+      <h3><a href="https://www.pracuj.pl/praca/staz-w-dziale-utrzymania-ruchu-automatyka-i-robotyka-tarnowo-podgorne-pow-poznanski-przemyslowa-1,oferta,1005228102" target="_blank" rel="noopener">Staż w Dziale Utrzymania Ruchu (Automatyka i Robotyka)</a></h3>
+      <div class="co">Imperial Tobacco Polska S.A. · Tarnowo Podgórne (pow. poznański)</div>
+      <div class="meta">
+        <span class="pay">32 zł brutto / godz.</span>
+        <span class="dl">do 25 dni</span>
+        <span class="badge">bez doświadczenia</span>
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">84</span>
+  </div>
+  <ul class="why"><li>marka na CV: Imperial Tobacco Polska S.A.</li><li>konkretne narzędzia: automatyk, robot, utrzymania ruchu</li></ul>
+</article>
+<article class="card" data-ne="0" data-t="intern in tccsa beiersdorf shared services poland">
+  <div class="head">
+    <span class="rank">2</span>
+    <div class="main">
+      <h3><a href="https://www.pracuj.pl/praca/intern-in-tccsa-poznan-gnieznienska-32,oferta,1005189225" target="_blank" rel="noopener">Intern in TCCSA</a></h3>
+      <div class="co">Beiersdorf Shared Services Poland · Poznań, Nowe Miasto</div>
+      <div class="meta">
+        <span class="pay">35 zł brutto / godz.</span>
+        <span class="dl">do 5 dni</span>
+        
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">58</span>
+  </div>
+  <ul class="why"><li>marka na CV: Beiersdorf Shared Services P</li><li>ścieżka: IT/dane</li></ul>
+</article>
+<article class="card" data-ne="0" data-t="master data intern beiersdorf shared services poland">
+  <div class="head">
+    <span class="rank">3</span>
+    <div class="main">
+      <h3><a href="https://www.pracuj.pl/praca/master-data-intern-poznan-gnieznienska-32,oferta,1005205546" target="_blank" rel="noopener">Master Data Intern</a></h3>
+      <div class="co">Beiersdorf Shared Services Poland · Poznań, Nowe Miasto</div>
+      <div class="meta">
+        <span class="pay">35 zł brutto / godz.</span>
+        <span class="dl">do 13 dni</span>
+        
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">58</span>
+  </div>
+  <ul class="why"><li>marka na CV: Beiersdorf Shared Services P</li><li>konkretne narzędzia: data</li></ul>
+</article>
+<article class="card" data-ne="1" data-t="youth development program - tester/ka oprogramowania (staż/praktyki) (m/k/d) signal group sp. z o.o.">
+  <div class="head">
+    <span class="rank">4</span>
+    <div class="main">
+      <h3><a href="https://www.pracuj.pl/praca/youth-development-program-tester-ka-oprogramowania-staz-praktyki-m-k-d-poznan-28-czerwca-1956-r-406,oferta,1005203064" target="_blank" rel="noopener">Youth Development Program - Tester/ka oprogramowania (staż/praktyki) (m/k/d)</a></h3>
+      <div class="co">Signal Group sp. z o.o. · Poznań, Wilda</div>
+      <div class="meta">
+        
+        <span class="dl">do 12 dni</span>
+        <span class="badge">bez doświadczenia</span>
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">57</span>
+  </div>
+  <ul class="why"><li>konkretne narzędzia: test</li><li>ścieżka: IT/dane</li></ul>
+</article>
+<article class="card" data-ne="0" data-t="backend internships antmicro">
+  <div class="head">
+    <span class="rank">5</span>
+    <div class="main">
+      <h3><a href="https://cpk.put.poznan.pl/offer/10107/backend-internships" target="_blank" rel="noopener">Backend Internships</a></h3>
+      <div class="co">Antmicro · woj. wielkopolskie/Poznan/Zlecenie</div>
+      <div class="meta">
+        
+        <span class="dl">do 9 dni</span>
+        
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">53</span>
+  </div>
+  <ul class="why"><li>marka na CV: Antmicro</li><li>ścieżka: IT/dane</li></ul>
+</article>
+<article class="card" data-ne="0" data-t="cloud internship antmicro">
+  <div class="head">
+    <span class="rank">6</span>
+    <div class="main">
+      <h3><a href="https://cpk.put.poznan.pl/offer/9943/cloud-internship" target="_blank" rel="noopener">Cloud Internship</a></h3>
+      <div class="co">Antmicro · woj. wielkopolskie/Poznan/Płatny staż</div>
+      <div class="meta">
+        
+        <span class="dl">do 9 dni</span>
+        
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">53</span>
+  </div>
+  <ul class="why"><li>marka na CV: Antmicro</li><li>ścieżka: IT/dane</li></ul>
+</article>
+<article class="card" data-ne="0" data-t="supply chain planning intern beiersdorf shared services poland">
+  <div class="head">
+    <span class="rank">7</span>
+    <div class="main">
+      <h3><a href="https://www.pracuj.pl/praca/supply-chain-planning-intern-poznan-gnieznienska-32,oferta,1005183730" target="_blank" rel="noopener">Supply Chain Planning Intern</a></h3>
+      <div class="co">Beiersdorf Shared Services Poland · Poznań, Nowe Miasto</div>
+      <div class="meta">
+        <span class="pay">35 zł brutto / godz.</span>
+        <span class="dl">do 3 dni</span>
+        
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">53</span>
+  </div>
+  <ul class="why"><li>marka na CV: Beiersdorf Shared Services P</li><li>ścieżka: IT/dane</li></ul>
+</article>
+<article class="card" data-ne="1" data-t="youth development program - ai-assisted developer (staż/praktyki) (m/k/d) signal group sp. z o.o.">
+  <div class="head">
+    <span class="rank">8</span>
+    <div class="main">
+      <h3><a href="https://www.pracuj.pl/praca/youth-development-program-ai-assisted-developer-staz-praktyki-m-k-d-poznan-28-czerwca-1956-r-406,oferta,1005203107" target="_blank" rel="noopener">Youth Development Program - AI-Assisted Developer (staż/praktyki) (m/k/d)</a></h3>
+      <div class="co">Signal Group sp. z o.o. · Poznań, Wilda</div>
+      <div class="meta">
+        
+        <span class="dl">do 12 dni</span>
+        <span class="badge">bez doświadczenia</span>
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">52</span>
+  </div>
+  <ul class="why"><li>ścieżka: IT/dane</li></ul>
+</article>
+<article class="card" data-ne="0" data-t="stażysta/stażystka w dziale planowania dimark it">
+  <div class="head">
+    <span class="rank">9</span>
+    <div class="main">
+      <h3><a href="https://rocketjobs.pl/oferta-pracy/dimark-it-stazysta-stazystka-w-dziale-planowania-poznan-produkcja-optymalizacja-procesu-produkcji" target="_blank" rel="noopener">Stażysta/Stażystka w dziale planowania</a></h3>
+      <div class="co">DIMARK IT · Poznań</div>
+      <div class="meta">
+        
+        <span class="dl">do 2026-12-29</span>
+        
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">46</span>
+  </div>
+  <ul class="why"><li>konkretne narzędzia: planowani</li><li>ścieżka: IT/dane</li></ul>
+</article>
+<article class="card" data-ne="1" data-t="stażysta / stażystka w dziale jakości mcc poznań sp. z o.o.">
+  <div class="head">
+    <span class="rank">10</span>
+    <div class="main">
+      <h3><a href="https://www.pracuj.pl/praca/stazysta-stazystka-w-dziale-jakosci-swadzim-pow-poznanski,oferta,1005232680" target="_blank" rel="noopener">Stażysta / Stażystka w Dziale Jakości</a></h3>
+      <div class="co">MCC Poznań Sp. z o.o. · Swadzim (pow. poznański)</div>
+      <div class="meta">
+        
+        <span class="dl">do 27 dni</span>
+        <span class="badge">bez doświadczenia</span>
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">42</span>
+  </div>
+  <ul class="why"></ul>
+</article>
+<article class="card" data-ne="1" data-t="youth development program – praktykant/ka w dziale realizacji inwestycji (m/k/d) signal group sp. z o.o.">
+  <div class="head">
+    <span class="rank">11</span>
+    <div class="main">
+      <h3><a href="https://www.pracuj.pl/praca/youth-development-program-praktykant-ka-w-dziale-realizacji-inwestycji-m-k-d-poznan-28-czerwca-1956-r-406,oferta,1005197823" target="_blank" rel="noopener">Youth Development Program – Praktykant/ka w Dziale Realizacji Inwestycji (m/k/d)</a></h3>
+      <div class="co">Signal Group sp. z o.o. · Poznań, Wilda</div>
+      <div class="meta">
+        
+        <span class="dl">do 10 dni</span>
+        <span class="badge">bez doświadczenia</span>
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">42</span>
+  </div>
+  <ul class="why"></ul>
+</article>
+<article class="card" data-ne="0" data-t="junior programista/tka, stażysta/tka, praktykant/tka - praca zdalna gaiaa sp. z o.o. sp. k.">
+  <div class="head">
+    <span class="rank">12</span>
+    <div class="main">
+      <h3><a href="https://cpk.put.poznan.pl/offer/11942/junior-programista-tka--stazysta-tka--praktykant-tka---praca-zdalna" target="_blank" rel="noopener">Junior programista/tka, stażysta/tka, praktykant/tka - praca zdalna</a></h3>
+      <div class="co">Gaiaa Sp. z o.o. Sp. K. · woj. wielkopolskie/Poznań/Zlecenie</div>
+      <div class="meta">
+        
+        <span class="dl">do 11 dni</span>
+        
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">41</span>
+  </div>
+  <ul class="why"><li>ścieżka: IT/dane</li></ul>
+</article>
+<article class="card" data-ne="0" data-t="stażysta / stażystka ds. wsparcia it (i linia) ">
+  <div class="head">
+    <span class="rank">13</span>
+    <div class="main">
+      <h3><a href="https://cpk.put.poznan.pl/offer/11956/stazysta---stazystka-ds--wsparcia-it--i-linia-" target="_blank" rel="noopener">Stażysta / Stażystka ds. Wsparcia IT (I linia)</a></h3>
+      <div class="co"> · woj. wielkopolskie/Robakowo/Płatny staż</div>
+      <div class="meta">
+        
+        <span class="dl">do 27 dni</span>
+        
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">41</span>
+  </div>
+  <ul class="why"><li>ścieżka: IT/dane</li></ul>
+</article>
+<article class="card" data-ne="0" data-t="praktyki – cyber security (bezpieczeństwo aplikacji) kpmg">
+  <div class="head">
+    <span class="rank">14</span>
+    <div class="main">
+      <h3><a href="https://justjoin.it/offers/kpmg-praktyki---cyber-security-bezpieczenstwo-aplikacji--poznan-security" target="_blank" rel="noopener">Praktyki – Cyber Security (bezpieczeństwo aplikacji)</a></h3>
+      <div class="co">KPMG · Poznań</div>
+      <div class="meta">
+        
+        <span class="dl">do 2027-02-08</span>
+        
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">41</span>
+  </div>
+  <ul class="why"><li>ścieżka: IT/dane</li></ul>
+</article>
+<article class="card" data-ne="0" data-t="praktyki studenckie jako technolog, konstruktor ogłoszenie">
+  <div class="head">
+    <span class="rank">15</span>
+    <div class="main">
+      <h3><a href="https://cpk.put.poznan.pl/offer/11914/praktyki-studenckie-jako-technolog--konstruktor" target="_blank" rel="noopener">Praktyki studenckie jako technolog, konstruktor</a></h3>
+      <div class="co">Ogłoszenie · woj. wielkopolskie/Poznań/Praktyka</div>
+      <div class="meta">
+        
+        <span class="dl">do 2 dni</span>
+        
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">39</span>
+  </div>
+  <ul class="why"><li>ścieżka: projektowanie — biuro, nie hala, ten sam dyplom</li></ul>
+</article>
+</section>
+<section id="junior">
+  <div class="sec-head">
+    <h2>Junior — pierwszy etat</h2>
+    <p>Wchodzisz z założeniem, że będziesz się uczył, i od razu masz pensję.</p>
+  </div>
+  
+<article class="card" data-ne="0" data-t="junior big data engineer (java / python) allegro">
+  <div class="head">
+    <span class="rank">16</span>
+    <div class="main">
+      <h3><a href="https://www.pracuj.pl/praca/junior-big-data-engineer-java-python-poznan-wierzbiecice-1b,oferta,1005187660" target="_blank" rel="noopener">Junior Big Data Engineer (Java / Python)</a></h3>
+      <div class="co">Allegro · Poznań, Wilda</div>
+      <div class="meta">
+        <span class="pay">11 200–15 250 zł brutto / mies.</span>
+        <span class="dl">do 5 dni</span>
+        
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">59</span>
+  </div>
+  <ul class="why"><li>marka na CV: Allegro</li><li>konkretne narzędzia: data, python</li></ul>
+</article>
+<article class="card" data-ne="0" data-t="młodszy/młodsza inżynier serwisu (sprzęt medyczny ct&amp;mr) siemens healthcare sp. z o.o.">
+  <div class="head">
+    <span class="rank">17</span>
+    <div class="main">
+      <h3><a href="https://www.pracuj.pl/praca/mlodszy-mlodsza-inzynier-serwisu-sprzet-medyczny-ct-mr-poznan,oferta,1005232555" target="_blank" rel="noopener">Młodszy/Młodsza Inżynier Serwisu (Sprzęt Medyczny CT&amp;MR)</a></h3>
+      <div class="co">Siemens Healthcare Sp. z o.o. · Poznań</div>
+      <div class="meta">
+        
+        <span class="dl">do 27 dni</span>
+        
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">51</span>
+  </div>
+  <ul class="why"><li>marka na CV: Siemens Healthcare Sp. z o.o</li><li>ścieżka: projektowanie — biuro, nie hala, ten sam dyplom</li></ul>
+</article>
+<article class="card" data-ne="0" data-t="💸 business analyst / junior associate in the pricing world 💸 valueships">
+  <div class="head">
+    <span class="rank">18</span>
+    <div class="main">
+      <h3><a href="https://rocketjobs.pl/oferta-pracy/valueships--business-analyst-junior-associate-in-the-pricing-world--poznan-consulting-biznes-strategia" target="_blank" rel="noopener">💸 Business Analyst / Junior Associate in the Pricing World 💸</a></h3>
+      <div class="co">Valueships · Poznań</div>
+      <div class="meta">
+        <span class="pay">5500.0-8500.0 PLN /Month; 5500.0-8500.0 PLN /Month; 1369.0-2</span>
+        <span class="dl">do 18 dni</span>
+        
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">49</span>
+  </div>
+  <ul class="why"><li>marka na CV: Valueships</li><li>praca po angielsku</li></ul>
+</article>
+<article class="card" data-ne="0" data-t="junior data engineer cloudfide spółka z ograniczoną odpowiedzialnością">
+  <div class="head">
+    <span class="rank">19</span>
+    <div class="main">
+      <h3><a href="https://justjoin.it/offers/cloudfide-spolka-z-ograniczona-odpowiedzialnoscia-junior-data-engineer-poznan-data" target="_blank" rel="noopener">Junior Data Engineer</a></h3>
+      <div class="co">CLOUDFIDE SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ · Poznań</div>
+      <div class="meta">
+        
+        <span class="dl">do 2027-02-07</span>
+        
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">48</span>
+  </div>
+  <ul class="why"><li>marka na CV: CLOUDFIDE SPÓŁKA Z OGRANICZO</li><li>konkretne narzędzia: data</li></ul>
+</article>
+<article class="card" data-ne="0" data-t="junior power bi engineer cloudfide spółka z ograniczoną odpowiedzialnością">
+  <div class="head">
+    <span class="rank">20</span>
+    <div class="main">
+      <h3><a href="https://justjoin.it/offers/cloudfide-spolka-z-ograniczona-odpowiedzialnoscia-junior-power-bi-engineer-poznan-data" target="_blank" rel="noopener">Junior Power BI Engineer</a></h3>
+      <div class="co">CLOUDFIDE SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ · Poznań</div>
+      <div class="meta">
+        
+        <span class="dl">do 2027-01-26</span>
+        
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">48</span>
+  </div>
+  <ul class="why"><li>marka na CV: CLOUDFIDE SPÓŁKA Z OGRANICZO</li><li>konkretne narzędzia: power bi</li></ul>
+</article>
+<article class="card" data-ne="0" data-t="junior ai fullstack engineer (python/java + react) cloudfide spółka z ograniczoną odpowiedzialnością">
+  <div class="head">
+    <span class="rank">21</span>
+    <div class="main">
+      <h3><a href="https://justjoin.it/offers/cloudfide-spolka-z-ograniczona-odpowiedzialnoscia-junior-ai-fullstack-engineer-python-java-react--poznan-javascript" target="_blank" rel="noopener">Junior AI Fullstack Engineer (Python/Java + React)</a></h3>
+      <div class="co">CLOUDFIDE SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ · Poznań</div>
+      <div class="meta">
+        
+        <span class="dl">do 2027-01-21</span>
+        
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">48</span>
+  </div>
+  <ul class="why"><li>marka na CV: CLOUDFIDE SPÓŁKA Z OGRANICZO</li><li>konkretne narzędzia: python</li></ul>
+</article>
+<article class="card" data-ne="1" data-t="asystent projektanta bim – tekla structures (k/m) precast spółka z o.o.">
+  <div class="head">
+    <span class="rank">22</span>
+    <div class="main">
+      <h3><a href="https://www.pracuj.pl/praca/asystent-projektanta-bim-tekla-structures-k-m-poznan-slowackiego-17,oferta,1005208136" target="_blank" rel="noopener">Asystent projektanta BIM – Tekla Structures (K/M)</a></h3>
+      <div class="co">Precast spółka z o.o. · Poznań, Jeżyce</div>
+      <div class="meta">
+        <span class="pay">5 400–8 700 zł brutto / mies.</span>
+        <span class="dl">do 15 dni</span>
+        <span class="badge">bez doświadczenia</span>
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">47</span>
+  </div>
+  <ul class="why"><li>ścieżka: projektowanie — biuro, nie hala, ten sam dyplom</li></ul>
+</article>
+<article class="card" data-ne="0" data-t="junior software ai engineer cloudfide spółka z ograniczoną odpowiedzialnością">
+  <div class="head">
+    <span class="rank">23</span>
+    <div class="main">
+      <h3><a href="https://justjoin.it/offers/cloudfide-spolka-z-ograniczona-odpowiedzialnoscia-junior-software-ai-engineer-poznan-python" target="_blank" rel="noopener">Junior Software AI Engineer</a></h3>
+      <div class="co">CLOUDFIDE SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ · Poznań</div>
+      <div class="meta">
+        
+        <span class="dl">do 2027-01-14</span>
+        
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">43</span>
+  </div>
+  <ul class="why"><li>marka na CV: CLOUDFIDE SPÓŁKA Z OGRANICZO</li><li>ścieżka: IT/dane</li></ul>
+</article>
+<article class="card" data-ne="0" data-t="junior information security specialist allegro">
+  <div class="head">
+    <span class="rank">24</span>
+    <div class="main">
+      <h3><a href="https://www.pracuj.pl/praca/junior-information-security-specialist-poznan,oferta,1005186369" target="_blank" rel="noopener">Junior Information Security Specialist</a></h3>
+      <div class="co">Allegro · Poznań</div>
+      <div class="meta">
+        
+        <span class="dl">do 4 dni</span>
+        
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">43</span>
+  </div>
+  <ul class="why"><li>marka na CV: Allegro</li><li>ścieżka: IT/dane</li></ul>
+</article>
+<article class="card" data-ne="0" data-t="junior .net developer capgemini polska">
+  <div class="head">
+    <span class="rank">25</span>
+    <div class="main">
+      <h3><a href="https://www.pracuj.pl/praca/junior-net-developer-poznan-kolorowa-6,oferta,1005202402" target="_blank" rel="noopener">Junior .NET Developer</a></h3>
+      <div class="co">Capgemini Polska · Poznań, Grunwald</div>
+      <div class="meta">
+        
+        <span class="dl">do 12 dni</span>
+        
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">43</span>
+  </div>
+  <ul class="why"><li>marka na CV: Capgemini Polska</li><li>ścieżka: IT/dane</li></ul>
+</article>
+<article class="card" data-ne="0" data-t="junior .net developer capgemini">
+  <div class="head">
+    <span class="rank">26</span>
+    <div class="main">
+      <h3><a href="https://justjoin.it/offers/capgemini-junior-net-developer-poznan-security" target="_blank" rel="noopener">Junior .NET Developer</a></h3>
+      <div class="co">Capgemini · Poznań</div>
+      <div class="meta">
+        
+        <span class="dl">do 2027-02-04</span>
+        
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">43</span>
+  </div>
+  <ul class="why"><li>marka na CV: Capgemini</li><li>ścieżka: IT/dane</li></ul>
+</article>
+<article class="card" data-ne="0" data-t="junior backend engineer (ai) cloudfide spółka z ograniczoną odpowiedzialnością">
+  <div class="head">
+    <span class="rank">27</span>
+    <div class="main">
+      <h3><a href="https://www.pracuj.pl/praca/junior-backend-engineer-ai-warszawa-jana-nowaka-jezioranskiego-53a,oferta,1005189766" target="_blank" rel="noopener">Junior Backend Engineer (AI)</a></h3>
+      <div class="co">CLOUDFIDE SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ · Warszawa, Praga-Południe</div>
+      <div class="meta">
+        
+        <span class="dl">do 5 dni</span>
+        
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">43</span>
+  </div>
+  <ul class="why"><li>marka na CV: CLOUDFIDE SPÓŁKA Z OGRANICZO</li><li>ścieżka: IT/dane</li></ul>
+</article>
+<article class="card" data-ne="1" data-t="młodszy operator procesu wytwarzania | nivea, bambino, eucerin (m/k/n) beiersdorf manufacturing poznań sp. z o.o.">
+  <div class="head">
+    <span class="rank">28</span>
+    <div class="main">
+      <h3><a href="https://www.pracuj.pl/praca/mlodszy-operator-procesu-wytwarzania-nivea-bambino-eucerin-m-k-n-poznan-gnieznienska-32b,oferta,1005222445" target="_blank" rel="noopener">Młodszy Operator Procesu Wytwarzania | NIVEA, Bambino, Eucerin (m/k/n)</a></h3>
+      <div class="co">Beiersdorf Manufacturing Poznań Sp. z o.o. · Poznań, Nowe Miasto</div>
+      <div class="meta">
+        
+        <span class="dl">do 23 dni</span>
+        <span class="badge">bez doświadczenia</span>
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">43</span>
+  </div>
+  <ul class="why"><li>marka na CV: Beiersdorf Manufacturing Poz</li></ul>
+</article>
+<article class="card" data-ne="0" data-t="asystent / asystentka projektanta - instalacje elektryczne oen sp. z o.o.">
+  <div class="head">
+    <span class="rank">29</span>
+    <div class="main">
+      <h3><a href="https://www.pracuj.pl/praca/asystent-asystentka-projektanta-instalacje-elektryczne-sady-pow-poznanski-logistyczna-11a,oferta,1005191477" target="_blank" rel="noopener">Asystent / Asystentka projektanta - instalacje elektryczne</a></h3>
+      <div class="co">OEN sp. z o.o. · Sady (pow. poznański)</div>
+      <div class="meta">
+        <span class="pay">10 000–13 000 zł brutto / mies.</span>
+        <span class="dl">do 6 dni</span>
+        
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">41</span>
+  </div>
+  <ul class="why"><li>ścieżka: elektrotechnika → automatyka → utrzymanie ruchu</li></ul>
+</article>
+<article class="card" data-ne="0" data-t="asystent / asystentka projektanta instalacji sanitarnych branża gazownicza remkon instal sp. z o.o.">
+  <div class="head">
+    <span class="rank">30</span>
+    <div class="main">
+      <h3><a href="https://www.pracuj.pl/praca/asystent-asystentka-projektanta-instalacji-sanitarnych-branza-gazownicza-poznan-stanislawa-wyspianskiego-12,oferta,1005233319" target="_blank" rel="noopener">Asystent / Asystentka projektanta instalacji sanitarnych branża gazownicza</a></h3>
+      <div class="co">REMKON INSTAL sp. z o.o. · Poznań, Grunwald</div>
+      <div class="meta">
+        <span class="pay">6 000–9 500 zł brutto / mies.</span>
+        <span class="dl">do 27 dni</span>
+        
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">41</span>
+  </div>
+  <ul class="why"><li>ścieżka: projektowanie — biuro, nie hala, ten sam dyplom</li></ul>
+</article>
+<article class="card" data-ne="1" data-t="asystent projektanta konstrukcji inżynierskich (m/k) pekabex">
+  <div class="head">
+    <span class="rank">31</span>
+    <div class="main">
+      <h3><a href="https://www.pracuj.pl/praca/asystent-projektanta-konstrukcji-inzynierskich-m-k-poznan-szarych-szeregow-23,oferta,1005183626" target="_blank" rel="noopener">Asystent Projektanta Konstrukcji Inżynierskich (m/k)</a></h3>
+      <div class="co">PEKABEX · Poznań, Jeżyce</div>
+      <div class="meta">
+        
+        <span class="dl">do 3 dni</span>
+        <span class="badge">bez doświadczenia</span>
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">40</span>
+  </div>
+  <ul class="why"><li>ścieżka: projektowanie — biuro, nie hala, ten sam dyplom</li></ul>
+</article>
+<article class="card" data-ne="0" data-t="informatyk - młodszy specjalista serwis desk alfavox sp. z o.o.">
+  <div class="head">
+    <span class="rank">32</span>
+    <div class="main">
+      <h3><a href="https://www.pracuj.pl/praca/informatyk-mlodszy-specjalista-serwis-desk-poznan-ziebicka-3,oferta,1005234907" target="_blank" rel="noopener">Informatyk - Młodszy Specjalista Serwis Desk</a></h3>
+      <div class="co">Alfavox Sp. z o.o. · Poznań, Grunwald</div>
+      <div class="meta">
+        
+        <span class="dl">do 2026-12-23</span>
+        
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">39</span>
+  </div>
+  <ul class="why"><li>ścieżka: projektowanie — biuro, nie hala, ten sam dyplom</li></ul>
+</article>
+<article class="card" data-ne="0" data-t="informatyk - młodszy specjalista helpdesk it-technology piotr krzeminiewski">
+  <div class="head">
+    <span class="rank">33</span>
+    <div class="main">
+      <h3><a href="https://www.pracuj.pl/praca/informatyk-mlodszy-specjalista-helpdesk-poznan,oferta,1005227880" target="_blank" rel="noopener">Informatyk - Młodszy Specjalista HelpDesk</a></h3>
+      <div class="co">IT-TECHNOLOGY PIOTR KRZEMINIEWSKI · Poznań</div>
+      <div class="meta">
+        <span class="pay">6 100–8 500 zł brutto / mies.</span>
+        <span class="dl">do 25 dni</span>
+        
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">38</span>
+  </div>
+  <ul class="why"><li>ścieżka: IT/dane</li></ul>
+</article>
+<article class="card" data-ne="1" data-t="młodszy specjalista ds. sprzedaży (m/k/n) adecco poland sp. z o.o.">
+  <div class="head">
+    <span class="rank">34</span>
+    <div class="main">
+      <h3><a href="https://www.pracuj.pl/praca/mlodszy-specjalista-ds-sprzedazy-m-k-n-poznan,oferta,1005185228" target="_blank" rel="noopener">Młodszy Specjalista ds. Sprzedaży (m/k/n)</a></h3>
+      <div class="co">Adecco Poland Sp. z o.o. · Poznań</div>
+      <div class="meta">
+        <span class="pay">6 500–9 200 zł brutto / mies.</span>
+        <span class="dl">do 4 dni</span>
+        <span class="badge">bez doświadczenia</span>
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">37</span>
+  </div>
+  <ul class="why"><li>marka na CV: Adecco Poland Sp. z o.o.</li><li>praca po angielsku</li></ul>
+</article>
+<article class="card" data-ne="0" data-t="junior talent sourcing specialist with english ams">
+  <div class="head">
+    <span class="rank">35</span>
+    <div class="main">
+      <h3><a href="https://www.pracuj.pl/praca/junior-talent-sourcing-specialist-with-english-bialystok,oferta,1005221426" target="_blank" rel="noopener">Junior Talent Sourcing Specialist with English</a></h3>
+      <div class="co">AMS · Białystok</div>
+      <div class="meta">
+        
+        <span class="dl">do 2026-12-31</span>
+        
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">37</span>
+  </div>
+  <ul class="why"><li>praca po angielsku</li><li>ścieżka: IT/dane</li></ul>
+</article>
+</section>
+<section id="techniczne">
+  <div class="sec-head">
+    <h2>Techniczne — zawód w ręku</h2>
+    <p>Konkretny fach: automatyka, serwis, instalacje. Tu dyplom pracuje od pierwszego dnia.</p>
+  </div>
+  
+<article class="card" data-ne="1" data-t="mechanik/automatyk utrzymania ruchu (wolne weekendy) employer spółka z ograniczoną odpowiedzialnością buk spółka komandytowa">
+  <div class="head">
+    <span class="rank">36</span>
+    <div class="main">
+      <h3><a href="https://www.pracuj.pl/praca/mechanik-automatyk-utrzymania-ruchu-wolne-weekendy-poznan,oferta,1005205728" target="_blank" rel="noopener">Mechanik/Automatyk Utrzymania Ruchu (wolne weekendy)</a></h3>
+      <div class="co">EMPLOYER SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ BUK SPÓŁKA KOMANDYTOWA · Poznań</div>
+      <div class="meta">
+        <span class="pay">8 300–10 000 zł brutto / mies.</span>
+        <span class="dl">do 13 dni</span>
+        <span class="badge">bez doświadczenia</span>
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">53</span>
+  </div>
+  <ul class="why"><li>konkretne narzędzia: automatyk, utrzymania ruchu</li><li>ścieżka: elektrotechnika → automatyka → utrzymanie ruchu</li></ul>
+</article>
+<article class="card" data-ne="1" data-t="serwisant / instalator automatów paczkowych (m/k) pointpack">
+  <div class="head">
+    <span class="rank">37</span>
+    <div class="main">
+      <h3><a href="https://www.pracuj.pl/praca/serwisant-instalator-automatow-paczkowych-m-k-poznan,oferta,1005205435" target="_blank" rel="noopener">Serwisant / Instalator automatów paczkowych (m/k)</a></h3>
+      <div class="co">Pointpack · Poznań</div>
+      <div class="meta">
+        <span class="pay">5 000–6 850 zł brutto / mies.</span>
+        <span class="dl">do 13 dni</span>
+        <span class="badge">bez doświadczenia</span>
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">52</span>
+  </div>
+  <ul class="why"><li>marka na CV: Pointpack</li><li>ścieżka: elektrotechnika → automatyka → utrzymanie ruchu</li></ul>
+</article>
+<article class="card" data-ne="1" data-t="instalator - monter instalacji elektrycznych i teletechnicznych ate energy group sp. z o.o.">
+  <div class="head">
+    <span class="rank">38</span>
+    <div class="main">
+      <h3><a href="https://www.pracuj.pl/praca/instalator-monter-instalacji-elektrycznych-i-teletechnicznych-poznan,oferta,1005191563" target="_blank" rel="noopener">Instalator - Monter instalacji elektrycznych i teletechnicznych</a></h3>
+      <div class="co">ATE ENERGY GROUP sp. z o.o. · Poznań</div>
+      <div class="meta">
+        <span class="pay">6 500–11 000 zł brutto / mies.</span>
+        <span class="dl">do 6 dni</span>
+        <span class="badge">bez doświadczenia</span>
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">44</span>
+  </div>
+  <ul class="why"><li>ścieżka: elektrotechnika → automatyka → utrzymanie ruchu</li></ul>
+</article>
+<article class="card" data-ne="1" data-t="monter - serwisant bram przemysłowych tech-piechowiak łukasz piechowiak">
+  <div class="head">
+    <span class="rank">39</span>
+    <div class="main">
+      <h3><a href="https://www.pracuj.pl/praca/monter-serwisant-bram-przemyslowych-chludowo-pow-poznanski,oferta,1005219535" target="_blank" rel="noopener">Monter - Serwisant bram przemysłowych</a></h3>
+      <div class="co">Tech-Piechowiak Łukasz Piechowiak · Chludowo (pow. poznański)</div>
+      <div class="meta">
+        <span class="pay">6 000–8 000 zł brutto / mies.</span>
+        <span class="dl">do 21 dni</span>
+        <span class="badge">bez doświadczenia</span>
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">44</span>
+  </div>
+  <ul class="why"><li>ścieżka: elektrotechnika → automatyka → utrzymanie ruchu</li></ul>
+</article>
+<article class="card" data-ne="0" data-t="technik utrzymania ruchu (k/m) kimball electronics">
+  <div class="head">
+    <span class="rank">40</span>
+    <div class="main">
+      <h3><a href="https://www.pracuj.pl/praca/technik-utrzymania-ruchu-k-m-tarnowo-podgorne-pow-poznanski,oferta,1005196532" target="_blank" rel="noopener">Technik Utrzymania Ruchu (K/M)</a></h3>
+      <div class="co">Kimball Electronics · Tarnowo Podgórne (pow. poznański)</div>
+      <div class="meta">
+        
+        <span class="dl">do 10 dni</span>
+        
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">43</span>
+  </div>
+  <ul class="why"><li>marka na CV: Kimball Electronics</li><li>konkretne narzędzia: utrzymania ruchu</li></ul>
+</article>
+<article class="card" data-ne="1" data-t="monter instalacji elektrycznej i automatyki elgra inżynieria przemysłowa sp. z o.o.">
+  <div class="head">
+    <span class="rank">41</span>
+    <div class="main">
+      <h3><a href="https://www.pracuj.pl/praca/monter-instalacji-elektrycznej-i-automatyki-poznan-swietego-michala-100,oferta,1005204765" target="_blank" rel="noopener">Monter instalacji elektrycznej i automatyki</a></h3>
+      <div class="co">ELGRA INŻYNIERIA PRZEMYSŁOWA sp. z o.o. · Poznań, Nowe Miasto</div>
+      <div class="meta">
+        
+        <span class="dl">do 13 dni</span>
+        <span class="badge">bez doświadczenia</span>
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">42</span>
+  </div>
+  <ul class="why"><li>konkretne narzędzia: automatyk</li><li>ścieżka: elektrotechnika → automatyka → utrzymanie ruchu</li></ul>
+</article>
+<article class="card" data-ne="0" data-t="data operations specialist summ-it s.a.">
+  <div class="head">
+    <span class="rank">42</span>
+    <div class="main">
+      <h3><a href="https://www.pracuj.pl/praca/data-operations-specialist-poznan-glogowska-31,oferta,1005182881" target="_blank" rel="noopener">Data Operations Specialist</a></h3>
+      <div class="co">summ-it s.a. · Poznań, Grunwald</div>
+      <div class="meta">
+        <span class="pay">10 000–15 000 zł netto (+ VAT) / mies.</span>
+        <span class="dl">do 3 dni</span>
+        
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">41</span>
+  </div>
+  <ul class="why"><li>marka na CV: summ-it s.a.</li><li>konkretne narzędzia: data</li></ul>
+</article>
+<article class="card" data-ne="0" data-t="elektryk w dziale utrzymania ruchu (k/m) aluplast sp. z o.o.">
+  <div class="head">
+    <span class="rank">43</span>
+    <div class="main">
+      <h3><a href="https://www.pracuj.pl/praca/elektryk-w-dziale-utrzymania-ruchu-k-m-nagradowice-pow-poznanski,oferta,1005219752" target="_blank" rel="noopener">Elektryk w Dziale Utrzymania Ruchu (K/M)</a></h3>
+      <div class="co">Aluplast Sp. z o.o. · Nagradowice (pow. poznański)</div>
+      <div class="meta">
+        <span class="pay">12 750 zł brutto / mies.</span>
+        <span class="dl">do 22 dni</span>
+        
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">40</span>
+  </div>
+  <ul class="why"><li>konkretne narzędzia: utrzymania ruchu</li><li>ścieżka: elektrotechnika → automatyka → utrzymanie ruchu</li></ul>
+</article>
+<article class="card" data-ne="0" data-t="inżynier / inżynierka - elektronik / elektroniczka abris pl sp. z o.o.">
+  <div class="head">
+    <span class="rank">44</span>
+    <div class="main">
+      <h3><a href="https://www.pracuj.pl/praca/inzynier-inzynierka-elektronik-elektroniczka-poznan-wolczynska-18,oferta,1005206393" target="_blank" rel="noopener">Inżynier / Inżynierka - elektronik / elektroniczka</a></h3>
+      <div class="co">ABRIS PL sp. z o.o. · Poznań, Grunwald</div>
+      <div class="meta">
+        <span class="pay">11 000–13 000 zł brutto / mies.</span>
+        <span class="dl">do 13 dni</span>
+        
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">40</span>
+  </div>
+  <ul class="why"><li>konkretne narzędzia: elektronik</li><li>ścieżka: elektrotechnika → automatyka → utrzymanie ruchu</li></ul>
+</article>
+<article class="card" data-ne="0" data-t="technik utrzymania ruchu (k/m) workhouse4you spółka z ograniczoną odpowiedzialnością">
+  <div class="head">
+    <span class="rank">45</span>
+    <div class="main">
+      <h3><a href="https://www.pracuj.pl/praca/technik-utrzymania-ruchu-k-m-niepruszewo-pow-poznanski,oferta,1005195451" target="_blank" rel="noopener">Technik Utrzymania Ruchu (K/M)</a></h3>
+      <div class="co">WORKHOUSE4YOU SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ · Niepruszewo (pow. poznański)</div>
+      <div class="meta">
+        <span class="pay">9 000–12 000 zł brutto / mies.</span>
+        <span class="dl">do 9 dni</span>
+        
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">40</span>
+  </div>
+  <ul class="why"><li>konkretne narzędzia: utrzymania ruchu</li><li>ścieżka: elektrotechnika → automatyka → utrzymanie ruchu</li></ul>
+</article>
+<article class="card" data-ne="0" data-t="serwisant - automatyk torstech s.c. piotr wiznerowicz, robert bykowski">
+  <div class="head">
+    <span class="rank">46</span>
+    <div class="main">
+      <h3><a href="https://www.pracuj.pl/praca/serwisant-automatyk-poznan-lutycka-11,oferta,1005206563" target="_blank" rel="noopener">Serwisant - Automatyk</a></h3>
+      <div class="co">TORSTECH S.C. PIOTR WIZNEROWICZ, ROBERT BYKOWSKI · Poznań, Jeżyce</div>
+      <div class="meta">
+        <span class="pay">od 9 000 zł brutto / mies.</span>
+        <span class="dl">do 13 dni</span>
+        
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">40</span>
+  </div>
+  <ul class="why"><li>konkretne narzędzia: automatyk</li><li>ścieżka: elektrotechnika → automatyka → utrzymanie ruchu</li></ul>
+</article>
+<article class="card" data-ne="0" data-t="mechanik utrzymania ruchu w amerykańskim koncernie employer spółka z ograniczoną odpowiedzialnością buk spółka komandytowa">
+  <div class="head">
+    <span class="rank">47</span>
+    <div class="main">
+      <h3><a href="https://www.pracuj.pl/praca/mechanik-utrzymania-ruchu-w-amerykanskim-koncernie-poznan,oferta,1005232471" target="_blank" rel="noopener">Mechanik Utrzymania Ruchu w Amerykańskim Koncernie</a></h3>
+      <div class="co">EMPLOYER SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ BUK SPÓŁKA KOMANDYTOWA · Poznań</div>
+      <div class="meta">
+        <span class="pay">8 000–10 000 zł brutto / mies.</span>
+        <span class="dl">do 27 dni</span>
+        
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">40</span>
+  </div>
+  <ul class="why"><li>konkretne narzędzia: utrzymania ruchu</li><li>ścieżka: elektrotechnika → automatyka → utrzymanie ruchu</li></ul>
+</article>
+<article class="card" data-ne="1" data-t="pracownik produkcji - monter wiązek elektrycznych cordify group sp. z o.o.">
+  <div class="head">
+    <span class="rank">48</span>
+    <div class="main">
+      <h3><a href="https://www.pracuj.pl/praca/pracownik-produkcji-monter-wiazek-elektrycznych-swarzedz-sredzka-19,oferta,1005230089" target="_blank" rel="noopener">Pracownik produkcji - Monter wiązek elektrycznych</a></h3>
+      <div class="co">CORDIFY GROUP sp. z o.o. · Swarzędz</div>
+      <div class="meta">
+        <span class="pay">5 000–6 000 zł brutto / mies.</span>
+        <span class="dl">do 26 dni</span>
+        <span class="badge">bez doświadczenia</span>
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">40</span>
+  </div>
+  <ul class="why"><li>ścieżka: elektrotechnika → automatyka → utrzymanie ruchu</li></ul>
+</article>
+<article class="card" data-ne="0" data-t="associate data operations specialist summ-it s.a.">
+  <div class="head">
+    <span class="rank">49</span>
+    <div class="main">
+      <h3><a href="https://www.pracuj.pl/praca/associate-data-operations-specialist-poznan-glogowska-31,oferta,1005182884" target="_blank" rel="noopener">Associate Data Operations Specialist</a></h3>
+      <div class="co">summ-it s.a. · Poznań, Grunwald</div>
+      <div class="meta">
+        <span class="pay">6 000–10 000 zł / mies. (zal. od umowy)</span>
+        <span class="dl">do 3 dni</span>
+        
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">39</span>
+  </div>
+  <ul class="why"><li>marka na CV: summ-it s.a.</li><li>konkretne narzędzia: data</li></ul>
+</article>
+<article class="card" data-ne="0" data-t="automatyk / automatyczka sugg sp. z o.o.">
+  <div class="head">
+    <span class="rank">50</span>
+    <div class="main">
+      <h3><a href="https://www.pracuj.pl/praca/automatyk-automatyczka-poznan,oferta,1005226826" target="_blank" rel="noopener">Automatyk / Automatyczka</a></h3>
+      <div class="co">SUGG sp. z o.o. · Poznań</div>
+      <div class="meta">
+        <span class="pay">5 000–10 500 zł brutto / mies.</span>
+        <span class="dl">do 25 dni</span>
+        
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">38</span>
+  </div>
+  <ul class="why"><li>konkretne narzędzia: automatyk</li><li>ścieżka: elektrotechnika → automatyka → utrzymanie ruchu</li></ul>
+</article>
+<article class="card" data-ne="0" data-t="mechanik utrzymania ruchu (m/k) r. twining and company sp. z o.o.">
+  <div class="head">
+    <span class="rank">51</span>
+    <div class="main">
+      <h3><a href="https://www.pracuj.pl/praca/mechanik-utrzymania-ruchu-m-k-swarzedz-rabowicka-29-31,oferta,1005231670" target="_blank" rel="noopener">Mechanik Utrzymania Ruchu (m/k)</a></h3>
+      <div class="co">R. Twining And Company Sp. z o.o. · Swarzędz</div>
+      <div class="meta">
+        <span class="pay">6 750–7 500 zł brutto / mies.</span>
+        <span class="dl">do 27 dni</span>
+        
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">38</span>
+  </div>
+  <ul class="why"><li>konkretne narzędzia: utrzymania ruchu</li><li>ścieżka: elektrotechnika → automatyka → utrzymanie ruchu</li></ul>
+</article>
+<article class="card" data-ne="0" data-t="automatyk / mechatronik – utrzymanie ruchu (k/m) luvena spółka akcyjna">
+  <div class="head">
+    <span class="rank">52</span>
+    <div class="main">
+      <h3><a href="https://www.pracuj.pl/praca/automatyk-mechatronik-utrzymanie-ruchu-k-m-lubon-romana-maya-1,oferta,1005220150" target="_blank" rel="noopener">Automatyk / Mechatronik – Utrzymanie Ruchu (K/M)</a></h3>
+      <div class="co">LUVENA Spółka Akcyjna · Luboń</div>
+      <div class="meta">
+        <span class="pay">6 310–7 489 zł brutto / mies.</span>
+        <span class="dl">do 22 dni</span>
+        
+      </div>
+    </div>
+    <span class="g" title="ocena rozwoju">38</span>
+  </div>
+  <ul class="why"><li>konkretne narzędzia: automatyk, utrzymanie ruchu</li><li>ścieżka: elektrotechnika → automatyka → utrzymanie ruchu</li></ul>
+</article>
+</section>
+
+<footer>
+  <b>Skąd dane:</b> pracuj.pl, justjoin.it, rocketjobs.pl, theprotocol.it, bulldogjob.pl, Biuro Kariery PUT, OLX Praca.<br>
+  <b>Oferty wygasłe</b> są odfiltrowane; linki prowadzą do oryginalnych ogłoszeń.<br>
+  Ocena rozwoju jest moja, nie pracodawcy — to wskazówka, gdzie warto wysłać CV, nie gwarancja zatrudnienia.
+</footer>
+</div><script>
+const cards=[...document.querySelectorAll('.card')];
+document.querySelectorAll('[data-f]').forEach(b=>b.addEventListener('click',()=>{
+  b.classList.toggle('on');
+  const on=[...document.querySelectorAll('[data-f].on')].map(x=>x.dataset.f);
+  cards.forEach(c=>{
+    let ok=true;
+    if(on.includes('ne') && c.dataset.ne!=='1') ok=false;
+    if(on.includes('tech') && !(c.closest('section').id==='techniczne')) ok=false;
+    if(on.includes('start') && !(c.closest('section').id==='start')) ok=false;
+    c.style.display=ok?'':'none';
+  });
+}));
+const q=document.getElementById('q');
+q.addEventListener('input',()=>{
+  const v=q.value.toLowerCase().trim();
+  cards.forEach(c=>{c.style.display=(!v||c.dataset.t.includes(v))?'':'none';});
+});
+</script></body></html>
